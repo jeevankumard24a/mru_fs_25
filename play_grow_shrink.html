@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
+      .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        flex-direction: row;
+      }
+
+      .container1 {
+        display: flex;
+        flex: 0 0 100px;
+        height: 100%;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .container2 {
+        display: flex;
+        flex: 1 1 200px;
+        height: 100%;
+        background-color: aquamarine;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container1" id="container1">Loading...</div>
+      <div class="container2" id="container2">Loading...</div>
+    </div>
+
+    <script>
+      function updateContainerSizes() {
+        const c1 = document.getElementById('container1');
+        const c2 = document.getElementById('container2');
+
+        const rect1 = c1.getBoundingClientRect();
+        const rect2 = c2.getBoundingClientRect();
+
+        c1.innerHTML = `Width: ${Math.round(
+          rect1.width
+        )}px<br>Height: ${Math.round(rect1.height)}px`;
+        c2.innerHTML = `Width: ${Math.round(
+          rect2.width
+        )}px<br>Height: ${Math.round(rect2.height)}px`;
+      }
+
+      window.addEventListener('resize', updateContainerSizes);
+      window.addEventListener('load', updateContainerSizes);
+    </script>
+  </body>
+</html>
