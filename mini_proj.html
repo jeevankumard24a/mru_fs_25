@@ -4,7 +4,9 @@
       body {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
+
       .header {
         position: fixed;
         top: 0;
@@ -17,81 +19,64 @@
         align-items: center;
         z-index: 10;
       }
+
+      .header-content {
+        font-size: 16px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px; /* space between header items */
+      }
+
       .block2 {
         display: flex;
         margin-top: 75px; /* to avoid overlap with fixed header */
         height: calc(100vh - 75px);
+        background-color: bisque;
       }
-      .sidebar {
+
+      aside {
         flex: 0 0 100px;
-        background-color: blueviolet;
+        background-color: aqua;
       }
+
       .block3 {
         flex: 1;
         background-color: red;
         overflow: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
       }
-      .content {
-        padding: 20px;
-        width: 100%; /* changed from auto */
-        background-color: lightgray;
-        height: 200px;
-        box-sizing: border-box; /* ensures padding doesn't overflow */
-      }
-      .footer {
-        background-color: green;
-        height: auto;
-      }
-      .header-content{
-        font-size: 16px;
-        color: white;
-        display:flex;
-        justify-content: center;
-        align-items: center;
+      footer {
         width: 100%;
-        gap: 20px; /* space between header items */
-      
-      }
-
-      .sidebar-content{
-        font-size: 16px;
-        color: white;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-   
-        gap: 20px; /* space between header items */
-
+        height: 50px;
+        background-color: blue;
       }
     </style>
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="header-content">
-  <div> Home </div>
-  <div>  About-Us </div>
-  <div>  Contact-US </div>
+        <div><a href="">Home</a></div>
+        <div><a href="">About-US</a></div>
+        <div><a href="">Contact-Us</a></div>
+      </div>
+    </header>
 
-      </div>  
-        
-      </div>
-    </div>
     <div class="block2">
-      <div class="sidebar">
-        <div class="sidebar-content"> 
-          <div><a href=""> Student Form </a> </div>
-          <div> Student Report</div>
-        </div>
-      </div>
-      <div class="block3">
-        <div class="content">Content</div>
-        <div class="footer">Footer</div>
-      </div>
+      <aside>
+        <div>Student Form</div>
+        <div>Student Report</div>
+      </aside>
+
+      <main class="block3">
+        <section class="content">Content</section>
+        <footer>Footer</footer>
+      </main>
     </div>
   </body>
 </html>

@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 75px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+      }
+      .block2 {
+        display: flex;
+        margin-top: 75px; /* to avoid overlap with fixed header */
+        height: calc(100vh - 75px);
+      }
+      .sidebar {
+        flex: 0 0 100px;
+        background-color: blueviolet;
+      }
+      .block3 {
+        flex: 1;
+        background-color: red;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        padding: 20px;
+        width: 100%; /* changed from auto */
+        background-color: lightgray;
+        height: 200px;
+        box-sizing: border-box; /* ensures padding doesn't overflow */
+      }
+      .footer {
+        background-color: green;
+        height: auto;
+      }
+      .header-content{
+        font-size: 16px;
+        color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px; /* space between header items */
+      
+      }
+
+      .sidebar-content{
+        font-size: 16px;
+        color: white;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   
+        gap: 20px; /* space between header items */
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+  <div> Home </div>
+  <div>  About-Us </div>
+  <div>  Contact-US </div>
+
+      </div>  
+        
+      </div>
+    </div>
+    <div class="block2">
+      <div class="sidebar">
+        <div class="sidebar-content"> 
+          <div><a href=""> Student Form </a> </div>
+          <div> Student Report</div>
+        </div>
+      </div>
+      <div class="block3">
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>
