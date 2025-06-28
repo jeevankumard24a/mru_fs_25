@@ -2,7 +2,7 @@
 1) 
 
 {
-  "name": "Ashuuu",
+  "name": "React",
   "age": 24,
   "country": "India"
 }
@@ -15,14 +15,13 @@
 
 ---------------
 
-3)
-
+3
 {
-  "name": "Ashritha",
+  "name": "React",
   "address": {
     "city": "Rajahmundry",
     "state": "Andhra Pradesh",
-    "pin": "533101"
+    "pin": "533124"
   }
 }
 
@@ -31,7 +30,7 @@
 4) 
 
 [
-  { "id": 1, "name": "Asha", "role": "Student" },
+  { "id": 1, "name": "React", "role": "Student" },
   { "id": 2, "name": "Rahul", "role": "Teacher" },
   { "id": 3, "name": "Kiran", "role": "Admin" }
 ]
@@ -60,7 +59,7 @@
 6)
 
 {
-  "name": "Jeevan",
+  "name": "React",
   "marks": {
     "math": 85,
     "science": 92,
@@ -74,7 +73,7 @@
 
 {
   "title": "React Basics",
-  "author": "Ashuuu",
+  "author": "React",
   "tags": ["react", "javascript", "frontend"]
 }
 
@@ -111,5 +110,5 @@
 [
   { "task": "Buy milk", "done": false },
   { "task": "Study React", "done": true },
-  { "task": "Call Ashuuu", "done": false }
+  { "task": "Call React", "done": false }
 ]
