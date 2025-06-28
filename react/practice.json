@@ -112,3 +112,133 @@
   { "task": "Study React", "done": true },
   { "task": "Call React", "done": false }
 ]
+
+------------
+
+11)
+
+{
+  "orderId": "ORD12345",
+  "customer": {
+    "name": "React",
+    "email": "react@example.com"
+  },
+  "items": [
+    {
+      "product": "Wireless Mouse",
+      "price": 499,
+      "quantity": 2
+    },
+    {
+      "product": "Keyboard",
+      "price": 899,
+      "quantity": 1
+    }
+  ],
+  "shipping": {
+    "method": "Express",
+    "cost": 150
+  },
+  "total": 2047
+}
+
+---------------
+12)
+
+{
+  "courseName": "Full Stack Development",
+  "duration": "4 months",
+  "modules": [
+    {
+      "title": "Frontend Basics",
+      "lessons": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "React",
+      "lessons": ["JSX", "Hooks", "State Management"]
+    },
+    {
+      "title": "Backend",
+      "lessons": ["Node.js", "Express", "MongoDB"]
+    }
+  ]
+}
+
+
+13) 
+
+{
+  "username": "react_dev",
+  "bio": "Full Stack Developer | EdTech Innovator",
+  "social": {
+    "github": "https://github.com/ashuuu",
+    "linkedin": "https://linkedin.com/in/ashuuu"
+  },
+  "preferences": {
+    "theme": "dark",
+    "notifications": {
+      "email": true,
+      "sms": false,
+      "push": true
+    }
+  }
+}
+
+--------------
+
+14)
+
+{
+  "quizTitle": "Basic JavaScript Quiz",
+  "questions": [
+    {
+      "question": "What is a closure?",
+      "options": ["Function inside function", "Loop", "Variable", "Array"],
+      "answer": "Function inside function"
+    },
+    {
+      "question": "Which is not a primitive data type?",
+      "options": ["String", "Number", "Boolean", "Object"],
+      "answer": "Object"
+    }
+  ]
+}
+
+----------
+
+15)
+
+{
+  "departments": [
+    {
+      "name": "Engineering",
+      "employees": [
+        {
+          "id": 101,
+          "name": "JAVA",
+          "skills": ["JavaScript", "React", "Node.js"]
+        },
+        {
+          "id": 102,
+          "name": "React",
+          "skills": ["Python", "Django", "PostgreSQL"]
+        }
+      ]
+    },
+    {
+      "name": "Design",
+      "employees": [
+        {
+          "id": 201,
+          "name": "Kavya",
+          "skills": ["Figma", "Illustrator", "Photoshop"]
+        }
+      ]
+    }
+  ]
+}
+
+-----------
+16)
+
+
