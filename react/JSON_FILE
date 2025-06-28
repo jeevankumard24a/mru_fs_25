@@ -1,0 +1,115 @@
+
+1) 
+
+{
+  "name": "Ashuuu",
+  "age": 24,
+  "country": "India"
+}
+
+----------------
+
+2) 
+
+["Apple", "Banana", "Orange", "Mango"]
+
+---------------
+
+3)
+
+{
+  "name": "Ashritha",
+  "address": {
+    "city": "Rajahmundry",
+    "state": "Andhra Pradesh",
+    "pin": "533101"
+  }
+}
+
+---------------------
+
+4) 
+
+[
+  { "id": 1, "name": "Asha", "role": "Student" },
+  { "id": 2, "name": "Rahul", "role": "Teacher" },
+  { "id": 3, "name": "Kiran", "role": "Admin" }
+]
+
+-----------------------
+
+5)
+
+[
+  {
+    "id": "p1",
+    "name": "Laptop",
+    "price": 59999,
+    "inStock": true
+  },
+  {
+    "id": "p2",
+    "name": "Mouse",
+    "price": 499,
+    "inStock": false
+  }
+]
+
+-------------------------
+
+6)
+
+{
+  "name": "Jeevan",
+  "marks": {
+    "math": 85,
+    "science": 92,
+    "english": 78
+  }
+}
+
+-----------------------------
+
+7) 
+
+{
+  "title": "React Basics",
+  "author": "Ashuuu",
+  "tags": ["react", "javascript", "frontend"]
+}
+
+-------------------------
+
+8)
+
+[
+  {
+    "course": "DSA",
+    "duration": "3 months",
+    "enrolled": true
+  },
+  {
+    "course": "Web Dev",
+    "duration": "4 months",
+    "enrolled": false
+  }
+]
+------------------------------
+
+9)
+
+
+{
+  "city": "Hyderabad",
+  "temperature": 33,
+  "condition": "Sunny"
+}
+-----------------------
+
+10)
+
+[
+  { "task": "Buy milk", "done": false },
+  { "task": "Study React", "done": true },
+  { "task": "Call Ashuuu", "done": false }
+]
