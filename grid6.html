@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        display: grid;
+        width: 400px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 10px; /* ✅ Will now show up */
+        column-gap: 10px;
+        background-color: aqua;
+      }
+
+      .item {
+        background-color: red;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+      }
+      .item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>

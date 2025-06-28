@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flexbox Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 1rem;
+        font-family: Arial, sans-serif;
+        background: #f8f8f8;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .box {
+        flex: 1 1 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        background-color: red;
+      }
+
+      /* sm: ≥ 640px → 2 columns */
+      @media (min-width: 640px) {
+        .box {
+          flex: 1 1 calc(50% - 1rem);
+        }
+      }
+
+      /* md: ≥ 768px → 3 columns */
+      @media (min-width: 768px) {
+        .box {
+          flex: 1 1 calc(33.333% - 1rem);
+        }
+      }
+
+      /* lg: ≥ 1024px → 4 columns */
+      @media (min-width: 1024px) {
+        .box {
+          flex: 1 1 calc(25% - 1rem);
+        }
+      }
+
+      /* xl: ≥ 1280px → 5 columns */
+      @media (min-width: 1280px) {
+        .box {
+          flex: 1 1 calc(20% - 1rem);
+        }
+      }
+
+      /* 2xl: ≥ 1536px → 6 columns */
+      @media (min-width: 1536px) {
+        .box {
+          flex: 1 1 calc(16.66% - 1rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Responsive Flexbox Layout (Pure CSS with Tailwind Breakpoints)</h2>
+    <div class="container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+      <div class="box">Box 5</div>
+      <div class="box">Box 6</div>
+      <div class="box">Box 7</div>
+      <div class="box">Box 8</div>
+      <div class="box">Box 9</div>
+      <div class="box">Box 10</div>
+    </div>
+  </body>
+</html>

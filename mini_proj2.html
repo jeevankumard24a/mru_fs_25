@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+      }
+
+      .main {
+        width: 100%;
+        height: 100%;
+        background-color: brown;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      .aside {
+        background-color: blue;
+        display: none;
+      }
+
+      @media (min-width: 1024px) {
+        .aside {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Header</div>
+      <div class="main">
+        <div class="aside"></div>
+        <div class="content">
+          <div class="maincontent"></div>
+          <div class="footer"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
